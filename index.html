@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta information -->
+	<meta charset="utf-8" /> <!-- Declaring character encoding -->
+	<title>Eve's Homemade Pizza</title> <!-- Page title -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive viewport -->
+	<link href="css/styles.css" rel="stylesheet" /> <!-- Link to external CSS file -->
+	<script src="js/javascript.js" defer></script> <!-- Link to external JavaScript file with 'defer' attribute -->
+</head>
+<body>
+<header>
+	<h1>Eve's Homemade</h1> <!-- Main heading -->
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Specials</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<p>Student Name: Yijun Fu</p>
+	<p>Student ID: 200552722</p>
+	<div id="select-size">
+		<h3 class="tablehead">Select size*:</h3>
+		<div class="menu initiallyHidden">
+			<input type="radio" name="size" value="Small"> Small<br>
+			<input type="radio" name="size" value="Medium"> Medium<br>
+			<input type="radio" name="size" value="Large"> Large<br>
+			<input type="radio" name="size" value="Extra-Large"> Extra-Large<br>
+		</div>
+	</div>
+	<br>
+	<div id="select-cheese">
+		<h3 class="tablehead">Select cheese*:</h3>
+		<div class="menu initiallyHidden">
+			<input type="radio" name="cheese" value="Regular"> Regular<br>
+			<input type="radio" name="cheese" value="Extra"> Extra Cheese<br>
+		</div>
+	</div>
+	<br>
+	<div id="select-crust">
+		<h3 class="tablehead">Select crust*:</h3>
+		<div class="menu initiallyHidden">
+			<input type="radio" name="crust" value="Hand Tossed"> Hand Tossed Crust<br>
+			<input type="radio" name="crust" value="Thin Crust"> Thin Crust<br>
+			<input type="radio" name="crust" value="Brooklyn Style"> Brooklyn Style Crust<br>
+			<input type="radio" name="crust" value="Gluten Free"> Gluten Free Crust<br>
+		</div>
+	</div>
+	<br>
+	<div id="select-sauce">
+		<h3 class="tablehead">Select sauce*:</h3>
+		<div class="menu initiallyHidden">
+			<input type="radio" name="sauce" value="Marinara"> Marinara Sauce<br>
+			<input type="radio" name="sauce" value="Alfredo"> Alfredo Sauce<br>
+			<input type="radio" name="sauce" value="Barbecue"> Barbecue Sauce<br>
+		</div>
+	</div>
+	<br>
+	<div id="select-meat">
+		<h3 class="tablehead">Select your choice of meat(s):</h3>
+		<div class="menu initiallyHidden">
+			<input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+			<input type="checkbox" name="meat" value="Italian Sausage"> Italian Sausage<br>
+			<input type="checkbox" name="meat" value="Ham"> Ham<br>
+			<input type="checkbox" name="meat" value="Beef"> Beef<br>
+			<input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+			<input type="checkbox" name="meat" value="Bacon"> Bacon<br>
+		</div>
+	</div>
+	<br>
+	<div id="select-vegetable">
+		<h3 class="tablehead">Select your choice of veggie(s):</h3>
+		<div class="menu initiallyHidden">
+			<input type="checkbox" name="veg" value="Mushrooms"> Mushrooms<br>
+			<input type="checkbox" name="veg" value="Onions"> Onions<br>
+			<input type="checkbox" name="veg" value="Green Peppers"> Green Peppers<br>
+			<input type="checkbox" name="veg" value="Black Olives"> Black Olives<br>
+			<input type="checkbox" name="veg" value="Tomatoes"> Tomatoes<br>
+			<input type="checkbox" name="veg" value="Pineapple"> Pineapple<br>
+			<input type="checkbox" name="veg" value="Jalapeños"> Jalapeños<br>
+			<input type="checkbox" name="veg" value="Spinach"> Spinach<br>
+			<input type="checkbox" name="veg" value="Banana Peppers"> Banana Peppers<br>
+			<input type="checkbox" name="veg" value="Roasted Red Peppers"> Roasted Red Peppers<br>
+		</div>
+	</div>
+	<br>
+
+	<button id="calc" type="submit" onclick="invoice()">Submit order</button>
+	<br><br>
+	<table class="pizza" style="width: 50%;" border="1" cellpadding="5">
+		<tbody>
+		<tr>
+			<td id="size"></td>
+			<td id="sizePrice"></td>
+		</tr>
+		<tr>
+			<td id="crust"></td>
+			<td id="crustPrice"></td>
+		</tr>
+		<tr>
+			<td id="cheese"></td>
+			<td id="cheesePrice"></td>
+		</tr>
+		<tr>
+			<td id="sauce"></td>
+			<td id="saucePrice"></td>
+		</tr>
+		<tr>
+			<td id="meat"></td>
+			<td id="meatPrice"></td>
+		</tr>
+		<tr>
+			<td id="veg"></td>
+			<td id="vegPrice"></td>
+		</tr>
+		<tr>
+			<td><strong>TOTAL PRICE:</strong></td>
+			<td id="totalPrice"></td>
+		</tr>
+		</tbody>
+	</table>
+	<br>
+</main>
+</body>
+</html>
+
